@@ -1,0 +1,17 @@
+## Import packages
+import("VineCopula")
+import("methods")
+
+## Import selected functions
+importFrom("parallel", "makeCluster")
+importFrom("parallel", "detectCores")
+importFrom("parallel", "stopCluster")
+importFrom("foreach", "foreach")
+importFrom("foreach", "%do%")
+importFrom("foreach", "%dopar%")
+importFrom("doParallel", "registerDoParallel")
+
+## copulaForest related functions
+export("RVineForestCopSelect")
+export("RVineForestLogLik")
+export("RVineForestPDF")
